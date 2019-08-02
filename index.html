@@ -1,0 +1,26 @@
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Basic Template</title>
+  <meta name="description" content="The HTML5 Basic">
+  <meta name="author" content="Tutorial">
+    <script src="./js/Angular17.js"></script>
+    <style>
+        .new-class{
+            font-size: 72px;
+        }
+        .other-class{
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1 class="new-class" ng-class="{'other-class': name=='Peter'}">Hallo,
+        <span ng-if='name'>{{name}}</span>
+        <span ng-if='!name'>'World'</span>
+        !</H1>
+    <input type="text" ng-model = 'name'/> 
+</body>
+</html>
